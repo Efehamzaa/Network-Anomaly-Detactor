@@ -3,3 +3,4 @@ __pycache__/
 __pycache__/ Efehamzaa
 normal_trafik.csv
 islenmis_trafik.csv
+*.joblib

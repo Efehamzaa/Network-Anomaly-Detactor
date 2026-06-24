@@ -1,3 +1,4 @@
+import joblib
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
@@ -19,4 +20,6 @@ print("\n --- İslenmis veri Seti (ilk 5 satir) ---")
 print(df.head())
 
 df.to_csv("islenmis_trafik.csv" , index=False)
+joblib.dump(scaler, "scaler_motoru.joblib")
+print(" Terazi motoru 'scaler_motoru.joblib' olarak kaydedildi.")
 print("\n BASARİLİ: Veri seti Makine Ogrenmesi (ML) icin hazirlandi ve 'islenmis_trafik.csv' olarak kaydedildi!")
