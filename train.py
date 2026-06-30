@@ -12,7 +12,7 @@ except FileNotFoundError:
 
 print(f"Toplam {len(df)} satirlik ag trafigi verisi egitime aliniyor...")
 
-model = IsolationForest(contamination=0.001, random_state=42)
+model = IsolationForest(contamination=0.05, random_state=42)
 
 print("Yapay zeka agın normal sinirlarini ogreniyor. Lutfen bekleyin...")
 model.fit(df)

@@ -41,7 +41,7 @@ def paket_analizi(paket):
 print(" Gelişmiş sniffer başlatıldı... Durdurmak için CTRL+C yapın.")
 
 try:
-    sniff(iface="wlan0", prn=paket_analizi)
+    sniff(prn=paket_analizi)
 except KeyboardInterrupt:
     print("\n[!] CTRL+C algılandı. Dinleme durduruluyor...")
 finally:
